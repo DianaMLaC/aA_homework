@@ -1,4 +1,6 @@
 class Queue
+    attr_reader :items
+
     def initialize
       @items
     end
