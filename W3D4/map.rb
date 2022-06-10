@@ -1,17 +1,21 @@
 class Map
+    attr_reader :items
     def initialize
-      # create ivar to store stack here!
+        @items = []
+      
     end
 
-    def push(el)
-      # adds an element to the stack
+    def set(key, value)
+        @items << [key, value]
+     
     end
 
-    def pop
-      # removes one element from the stack
+    def get(key)
+
+      
     end
 
-    def peek
-      # returns, but doesn't remove, the top element in the stack
+    def delete(key)
+      
     end
   end
