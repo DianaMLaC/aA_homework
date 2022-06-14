@@ -28,7 +28,9 @@ class Mancala
         print_indices
 
         begin
-          start_pos = current_player.prompt
+          start_pos = current_player.prompt 
+          # Is this called from the Player class? 
+          #Also current_player is a variable of other instance play, how is it called?
           start_pos -= 1 if start_pos <= 6
           @board.valid_move?(start_pos)
         rescue Exception => e
