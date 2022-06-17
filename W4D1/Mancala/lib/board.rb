@@ -1,4 +1,5 @@
 class Board
+  
   attr_accessor :cups
 
   def initialize(name1, name2)
